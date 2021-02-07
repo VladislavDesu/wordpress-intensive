@@ -1,0 +1,47 @@
+.footer {
+   min-height: 166px;
+   padding-top: 54px;
+   padding-bottom: 20px;
+   text-align: center;
+   background-color: #1a1a1a;
+
+   &__info {
+      margin-bottom: 2px;
+
+      & a {
+         position: relative;
+         font-weight: 300;
+         font-size: 15px;
+         line-height: 21px;
+         color: #888888;
+         text-decoration: underline;
+
+         &:nth-child(1) {
+            padding-right: 15px;
+
+            &::before {
+               position: absolute;
+               content: "";
+               top: -2px;
+               right: 5px;
+               width: 1px;
+               height: 13px;
+               background-color: #888888;
+               transform: translateY(50%);
+            }
+         }
+
+         &:hover,
+         &:focus {
+            text-decoration: none;
+         }
+      }
+   }
+
+   &__phone {
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 21px;
+      color: #888888;
+   }
+}

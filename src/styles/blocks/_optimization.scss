@@ -1,0 +1,58 @@
+.optimization {
+   min-height: 550px;
+   background-image: url("../images/woman-img.png");
+   background-repeat: no-repeat;
+   background-position: 150px 48px;
+
+   &__wrapper {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0 15px;
+      padding-top: 90px;
+      padding-bottom: 66px;
+   }
+
+   &__inner {
+      max-width: 750px;
+      margin-left: auto;
+   }
+
+   &__title {
+      margin-bottom: 12px;
+      font-weight: 900;
+      font-size: 30px;
+      color: #299cbd;
+      text-transform: uppercase;
+   }
+
+   &__text {
+      margin-bottom: 10px;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 27px;
+      color: #4a4a4a;
+
+      &--bold {
+         font-weight: 700;
+      }
+   }
+}
+
+@media (max-width: 1250px) {
+   .optimization {
+      background-image: none;
+   }
+}
+
+@media (max-width: 550px) {
+   .optimization {
+      &__title {
+         font-size: 27px;
+      }
+
+      &__text {
+         text-align: justify;
+         margin-bottom: 20px;
+      }
+   }
+}
